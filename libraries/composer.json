@@ -1,5 +1,5 @@
 {
     "require": {
-        "endroid/qr-code": "^3.7"
+        "spipu/html2pdf": "*"
     }
 }
