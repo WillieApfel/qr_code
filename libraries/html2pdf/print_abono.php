@@ -1,3 +1,9 @@
+<?php
+include 'generar.php';
+$qr = qr_gen($id);
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -34,7 +40,7 @@
         <p>TIPO DE ABONO: </p>
     </div>
     <div class="qr">
-        <img src="<?php echo "temp/qr_code_$id.png"; ?>" alt="Codigo QR">
+        <img src="<?php echo $qr; ?>" alt="Codigo QR">
     </div>
 </body>
 </html>
