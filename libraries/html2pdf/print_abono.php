@@ -15,6 +15,7 @@ $qr = qr_gen($id);
 
         img.logo {
             width: 100px;
+            margin-left: 40px;
         }
         h1 {
             text-align: center;
@@ -27,6 +28,14 @@ $qr = qr_gen($id);
         .qr {
             text-align: center;
         }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            padding: 10px 40px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -37,8 +46,26 @@ $qr = qr_gen($id);
         <h2>Abonado/a:</h2>
         <p>NOMBRE: </p>
         <p>CÉDULA: </p>
-        <p>TIPO DE ABONO: </p>
+        <p>TIPO DE ABONO: </p><br>
     </div>
+
+    <div class="datos-asiento">
+        <table border="1">
+            <tr>
+                <th scope="col">Localidad</th>
+                <th scope="col">Sector</th>
+                <th scope="col">Fila</th>
+                <th scope="col">Asiento</th>
+            </tr>
+            <tr>
+                <td>VIP</td>
+                <td>Por ahi</td>
+                <td>F</td>
+                <td>58</td>
+            </tr>
+        </table>
+    </div><!--.datos-asiento-->
+    
     <div class="qr">
         <img src="<?php echo $qr; ?>" alt="Codigo QR">
     </div>
